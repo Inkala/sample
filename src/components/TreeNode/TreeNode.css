@@ -1,0 +1,21 @@
+.TreeNode {
+  flex-direction: column;
+}
+
+.TreeParent {
+  display: flex;
+  align-items: center;
+}
+
+.TreeParent > * {
+  margin: 5px
+}
+
+.file-arrow {
+  font-size: 0.75em;
+}
+
+.file-icon {
+  font-size: 1.25em;
+  color: #850000;
+}

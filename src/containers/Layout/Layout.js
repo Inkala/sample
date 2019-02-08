@@ -18,7 +18,7 @@ export default class FileExplorer extends Component {
         <div className="TreeWrapper">
           <FileTree onSelect={this.onSelect} />
         </div>
-        <div>
+        <div className="file-content">
           { selectedFile && selectedFile.type === 'file' && selectedFile.content }
         </div>
       </div>

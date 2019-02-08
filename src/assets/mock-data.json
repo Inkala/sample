@@ -1,54 +1,52 @@
 [
   {
-    "path": "/root",
-    "type": "folder",
-    "isRoot": true,
-    "isOpen": true,
-    "id": 1,
-    "children": [
-      {
-        "path": "/root/david",
-        "type": "folder",
-        "isOpen": true,
-        "id": 2,
-        "children": [
-          {
-            "path": "/root/david/readme.md",
-            "type": "file",
-            "content": "Thanks for reading me me. But there is nothing here."
-          }
-        ]
-      },
-      {
-        "path": "/root/jslancer",
-        "type": "folder",
-        "isOpen": true,
-        "id": 3,
-        "children": [
-          {
-            "path": "/root/jslancer/projects",
-            "type": "folder",
-            "isOpen": true,
-            "id": 4,
-            "children": [
-              {
-                "path": "/root/jslancer/projects/treeview",
-                "type": "folder",
-                "isOpen": true,
-                "id": 5,
-                "children": []
-              }
-            ]
-          },
-          {
-            "path": "/root/jslancer/vblogs",
-            "type": "folder",
-            "isOpen": true,
-            "id": 6,
-            "children": []
-          }
-        ]
-      }
-    ]
+    "/Documents": {
+      "path": "/Documents",
+      "type": "folder",
+      "isRoot": true,
+      "children": ["/Documents/Books", "/Documents/Articles"],
+      "isOpen": true,
+      "id": 1
+    },
+    "/Documents/Books": {
+      "path": "/Documents/Books",
+      "type": "folder",
+      "children": ["/Documents/Books/readme.md"],
+      "isOpen": true,
+      "id": 2
+    },
+    "/Documents/Books/readme.md": {
+      "path": "/Documents/Books/readme.md",
+      "type": "file",
+      "content": "Thanks for reading me me. But there is nothing here."
+    },
+    "/Documents/Articles": {
+      "path": "/Documents/Articles",
+      "type": "folder",
+      "children": ["/Documents/Articles/News", "/Documents/Articles/Blog"],
+      "isOpen": true,
+      "id": 3
+    },
+    "/Documents/Articles/News": {
+      "path": "/Documents/Articles/News",
+      "type": "folder",
+      "children": ["/Documents/Articles/News/In Progress"],
+      "isOpen": true,
+      "id": 4
+    },
+    "/Documents/Articles/News/In Progress": {
+      "path": "/Documents/Articles/News/In Progress",
+      "type": "folder",
+      "children": [],
+      "isOpen": true,
+      "id": 5
+    },
+    "/Documents/Articles/Blog": {
+      "path": "/Documents/Articles/Blog",
+      "type": "folder",
+      "children": [],
+      "isOpen": true,
+      "id": 6
+    }
   }
 ]
