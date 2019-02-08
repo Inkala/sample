@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import FileExplorer from './components/FileExplorer';
+import React, { Component } from "react";
+import "./App.css";
+import Layout from "./containers/Layout/Layout";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">File Tree</h1>
         </header>
-        <div className="App-intro">
-          <FileExplorer />
-        </div>
+        <Layout />
       </div>
     );
   }

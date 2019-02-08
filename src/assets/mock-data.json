@@ -1,0 +1,54 @@
+[
+  {
+    "path": "/root",
+    "type": "folder",
+    "isRoot": true,
+    "isOpen": true,
+    "id": 1,
+    "children": [
+      {
+        "path": "/root/david",
+        "type": "folder",
+        "isOpen": true,
+        "id": 2,
+        "children": [
+          {
+            "path": "/root/david/readme.md",
+            "type": "file",
+            "content": "Thanks for reading me me. But there is nothing here."
+          }
+        ]
+      },
+      {
+        "path": "/root/jslancer",
+        "type": "folder",
+        "isOpen": true,
+        "id": 3,
+        "children": [
+          {
+            "path": "/root/jslancer/projects",
+            "type": "folder",
+            "isOpen": true,
+            "id": 4,
+            "children": [
+              {
+                "path": "/root/jslancer/projects/treeview",
+                "type": "folder",
+                "isOpen": true,
+                "id": 5,
+                "children": []
+              }
+            ]
+          },
+          {
+            "path": "/root/jslancer/vblogs",
+            "type": "folder",
+            "isOpen": true,
+            "id": 6,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
