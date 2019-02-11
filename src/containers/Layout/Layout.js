@@ -5,7 +5,7 @@ import FileTree from "../../components/FileTree/FileTree";
 import data from "../../assets/mock-data.json";
 import "./Layout.css";
 
-export default class FileExplorer extends Component {
+class Layout extends Component {
   state = {
     selectedFile: null,
     nodes: data[0]
@@ -28,14 +28,13 @@ export default class FileExplorer extends Component {
 
   toggleHandler = node => {
     const { nodes } = this.state;
-    // debugger;
     nodes[node.path].isOpen = !nodes[node.path].isOpen;
     this.setState({ nodes });
   };
 
   nodeLabelHandler = node => node.path.split("/").pop();
 
-  marginHandler = (level) => {
+  marginHandler = level => {
     const margin = {
       marginLeft: `${level * 2}0px`
     };
@@ -44,7 +43,14 @@ export default class FileExplorer extends Component {
 
   render() {
     const { selectedFile } = this.state;
-
+    let fileContent = null;
+    if (selectedFile && selectedFile.type === "file" && selectedFile.content) {
+      let key = 0;
+      fileContent = selectedFile.content.map(par => {
+        key++;
+        return <p key={key}>{par}</p>;
+      });
+    }
     return (
       <div className="Layout">
         <div className="TreeWrapper">
@@ -58,10 +64,10 @@ export default class FileExplorer extends Component {
             getMargin={this.marginHandler}
           />
         </div>
-        <div className="file-content">
-          {selectedFile && selectedFile.type === "file" && selectedFile.content}
-        </div>
+        <div className="file-content">{fileContent}</div>
       </div>
     );
   }
 }
+
+export default Layout;
